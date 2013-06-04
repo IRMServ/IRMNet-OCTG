@@ -1,5 +1,5 @@
 <?php
-
+namespace OCTG;
 /**
  * Zend Framework (http://framework.zend.com/)
  *
@@ -8,6 +8,25 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 return array(
+      'acl' => array(
+        'OCTG' => array(
+            'OCTG - ADMINISTRATIVO' => array(
+                'OCTG\Controller\Index:index',              
+            ),
+            'OCTG - INSPEÇÃO' => array(
+                'OCTG\Controller\Index:index',              
+            ),
+            'OCTG - MACHINE SHOP' => array(
+                'OCTG\Controller\Index:index',              
+            ),
+            'OCTG - VÁLVULAS' => array(
+                'OCTG\Controller\Index:index',              
+            ),
+            'TI' => array(
+                'OCTG\Controller\Index:index',              
+            ),
+        )
+    ),
     'router' => array(
         'routes' => array(
             // This defines the hostname route which forms the base
